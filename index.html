@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="hero">
+                <h1>CHESANYAMA</h1>
+                <p>The best meat, in the country!.</p>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div id="menu-list">
+                </div> 
+            </section>
+            
+            <section class="order">
+                <div id="order-list">
+                    <div>
+                        <h2>Your Order</h2>   
+                    </div>
+                    
+                    <div id="order-info">
+                        
+                    </div>
+                </div>
+                    <div id="total-calc">
+                        
+                    </div>
+                    <div>
+                        <button id="order-btn" type="submit">Complete Order</button>
+                    </div>
+                
+            </section>
+            
+            <section class="modal" id="modal-container">
+                <div class="modal-inner" id="modal-inner">
+                    
+                    <form id="payment-form">
+                        <h2>Enter Card Details</h2>
+                        
+                        <input type="text" id="name-input" placeholder="Your Name" required>
+
+                        <input type="text" id="card-number" placeholder="Card Number" maxlength="13" minlength="13" required>
+
+                        <input type="text" id="expiry-date" placeholder="Expiry Date (MM/YY)" maxlength="4" minlength="4"  required>
+
+                        <input type="text" id="cvv" placeholder="CVV" maxlength="3" minlength="3" required>
+
+                        <button type="submit">Pay</button>
+                    </form>
+                    
+                </div>
+            </section>
+            
+            <p id="order-confirmation" style="display: none;"></p>
+            
+            
+        </main>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

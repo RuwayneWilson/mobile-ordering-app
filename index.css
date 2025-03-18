@@ -1,0 +1,207 @@
+html {
+    box-sizing: border-box;
+    background-color: #d2d2d2;
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Smythe", system-ui;
+    max-width: 600px;
+    padding-bottom: 15px;
+    background-image: url('');
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+header {
+    background-image: url('/images/braaimeat-image.jpg');
+    background-size: cover;
+    height: 100%;
+    padding: 60px;
+}
+
+#container {
+    display: flex;
+    padding: 34px 20px 12px 0px;
+}
+
+/* TYPOGRAPHY */
+h1, .hero p {
+    color: white;
+    margin: 0;
+} 
+
+h2, h3 {
+    color: black;
+    font-size: 28px;
+    line-height: 16.8px;
+}
+
+h4 {
+   color: #8B8B8B;
+   font-size: 16px;
+   line-height: 22px;
+   margin: 0;
+   padding-top: 5px;
+}
+
+p {
+    margin: 0;
+    font-size: 20px; 
+    padding-top: 5px;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Push button to the right */
+    border-bottom: solid 1px lightgray;
+}
+
+#menu-list {
+    padding: 10px 46px 0;
+}
+
+.menu-item {
+    display: flex;
+    padding: 30px 0px 30px 20px;
+}
+
+.food-icon {
+    padding-top: 10px;
+    font-size: 70px;
+}
+
+.menu-data {
+    padding-left: 20px;
+}
+
+#add-icon {    
+    margin: auto;
+    padding: 16px 0 0 0;
+    justify-content: center;
+}
+
+/* order-section */
+
+#order-list{
+    display: none;
+    border-bottom: solid 1px #393333;
+    max-width: 85%;
+    margin: 5px auto;
+}
+
+#order-list h2 {
+    text-align: center;
+}
+
+#total-calc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 5px 30px 5px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 80%;
+    margin: 10px auto;
+}
+
+.order button{
+    display: block;
+    width: 85%;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #e07511;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+/* Buttons */
+#add-btn button {
+    background: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #DEDEDE;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Make the "+" more visible */
+    cursor: pointer;
+}
+
+/* Remove Button Styling */
+.remove-btn {
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    border: none;
+    background: none;
+    color: #8B8B8B;
+    cursor: pointer;
+}
+
+/* Modal */
+
+#modal-container h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 30px auto;
+    background: #ffffff;
+    z-index: 1;
+    border: solid 1px #393333;
+    height: 80%;
+    width: 350px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 6px 2px #666;
+    padding: 50px 24px 30px;
+}
+
+input{
+    display: block;
+    border: solid 1px #212529;
+    margin-top: 10px; 
+    padding: 10px;
+    height: 50px;
+    width: 90%;
+    border-radius: 3px;
+    margin-bottom: 23px; 
+}
+
+#modal-container button {
+    display: block;
+    width: 85%;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #e07511;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Order Confirmation Message */
+#order-confirmation {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #e07511;
+    margin-top: 15px;
+}
