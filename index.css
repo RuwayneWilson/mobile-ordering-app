@@ -8,7 +8,7 @@ body {
     font-family: "Smythe", system-ui;
     max-width: 600px;
     padding-bottom: 15px;
-    background-image: url('');
+    background-color: #ffffff;
 }
 
 .flex {
@@ -20,7 +20,6 @@ body {
 header {
     background-image: url('/images/braaimeat-image.jpg');
     background-size: cover;
-    height: 100%;
     padding: 60px;
 }
 
